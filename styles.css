@@ -1,0 +1,220 @@
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f7f8;
+}
+
+h1, h2, .section-title {
+    color: #333;
+}
+
+.container p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 1em;
+}
+
+/* Navigation Styling */
+.navbar-brand {
+    font-weight: bold;
+    color: #007bff !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background-image: url('2.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-section h1, .hero-section p, .hero-section .btn {
+    color: #fff;
+    z-index: 1;
+}
+
+/* Profile Picture */
+.profile-pic {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 2em;
+    color: #007bff;
+    margin-bottom: 1em;
+}
+
+/* Hobbies & Interests Section */
+.hobbies-section .fa {
+    font-size: 3em;
+    color: #007bff;
+    margin-bottom: 0.5em;
+}
+
+/* Skills Section */
+.skills-section h4 {
+    color: #007bff;
+    margin-bottom: 0.5em;
+}
+
+.skills-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-section li {
+    color: #555;
+    font-size: 1em;
+    margin-bottom: 0.3em;
+}
+
+/* Experience Section */
+.experience-section p {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+/* Testimonials Section */
+.testimonials-section blockquote {
+    border-left: 5px solid #007bff;
+    padding-left: 20px;
+    font-style: italic;
+    margin: 0;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: auto; /* Pushes footer to the bottom */
+}
+
+/* Projects Slider Section */
+.projects-slider .card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.projects-slider .card:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.1);
+}
+
+/* Skills Section Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-skills .row div {
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+}
+
+.animate-skills .row div:nth-child(1) { animation-delay: 0.2s; }
+.animate-skills .row div:nth-child(2) { animation-delay: 0.4s; }
+.animate-skills .row div:nth-child(3) { animation-delay: 0.6s; }
+
+/* Hero Slider Styling */
+.hero-slider .hero-slide {
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.carousel-caption {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.carousel-caption h1 {
+    font-size: 3rem;
+}
+
+.carousel-caption p {
+    font-size: 1.5rem;
+}
+
+
+
+/* Animation Styles */
+[data-aos] {
+    opacity: 0;
+}
+[data-aos].aos-animate {
+    opacity: 1;
+}
+
+
+/* Projects Section */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* SVG Image Section */
+.svg-image-section {
+    background-color: #fff; /* Optional background color */
+    padding: 40px 20px; /* Padding around the section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.svg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Space between title and SVG */
+}
+

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html">Portfolio</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Combined Hero and Image Slider Section -->
+<section class="hero-slider-section">
+    <div id="heroCarousel" class="carousel slide" data-ride="carousel" style="height: 100vh;">
+        <div class="carousel-inner" style="height: 100%;">
+            <!-- Slide 1 -->
+            <div class="carousel-item active" style="height: 100%;">
+                <img src="2.jpg" class="d-block w-100" alt="Image 1" style="height: 100%; object-fit: cover; object-position: top;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Welcome to My Portfolio</h1>
+                    <p>I'm a passionate software engineer specializing in AI and backend development.</p>
+                    <a href="projects.html" class="btn btn-primary mt-3">View My Projects</a>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="carousel-item" style="height: 100%;">
+                <img src="3.jpg" class="d-block w-100" alt="Image 2" style="height: 100%; object-fit: cover; object-position: top;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Explore My Work</h1>
+                    <p>Check out my projects and achievements.</p>
+                    <a href="projects.html" class="btn btn-primary mt-3">View My Projects</a>
+                </div>
+            </div>
+        </div>
+        <!-- Controls -->
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</section>
+
+    
+    <!-- Skills Section -->
+    <section class="skills-section container py-5">
+        <h2 class="text-center">My Skills</h2>
+        <p class="text-center mb-5">A quick overview of my technical skills and expertise.</p>
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Programming Languages</h4>
+                <ul>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>PHP</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4>Frameworks & Libraries</h4>
+                <ul>
+                    <li>Django</li>
+                    <li>Laravel</li>
+                    <li>React & jQuery</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4>Other Skills</h4>
+                <ul>
+                    <li>AI & Machine Learning</li>
+                    <li>Database Management</li>
+                    <li>Version Control (Git)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Experience</h2>
+            <p class="text-center mb-5">Here’s a snapshot of my journey in the tech world.</p>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <h4>Software Engineer - Tech Solutions Inc.</h4>
+                    <p><strong>2021 - Present</strong></p>
+                    <p>Developed AI-driven features and maintained backend services for e-commerce applications.</p>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <h4>Junior Developer - Startup Hub</h4>
+                    <p><strong>2019 - 2021</strong></p>
+                    <p>Worked on small-scale applications and contributed to the development of a REST API backend.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section container py-5">
+        <h2 class="text-center">Testimonials</h2>
+        <p class="text-center mb-5">What others say about my work and skills.</p>
+        <div class="row">
+            <div class="col-md-6">
+                <blockquote class="blockquote">
+                    <p>"A dedicated professional with impressive technical expertise. Delivered quality results for our AI project."</p>
+                    <footer class="blockquote-footer">Jane Doe, Project Manager</footer>
+                </blockquote>
+            </div>
+            <div class="col-md-6">
+                <blockquote class="blockquote">
+                    <p>"A highly motivated engineer who takes initiative and brings innovative ideas to the table."</p>
+                    <footer class="blockquote-footer">John Smith, CTO</footer>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer bg-dark text-white text-center py-3">
+        <p>&copy; 2024 My Portfolio. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
